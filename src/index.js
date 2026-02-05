@@ -3,6 +3,18 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { createBrowserRouter } from 'react-router-dom';
+
+let routes = createBrowserRouter([{
+  path: "/",
+  element: <App></App>,
+  children: [
+    {
+      path:"/",
+      // element
+    }
+  ]
+}])
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
