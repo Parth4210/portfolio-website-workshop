@@ -1,70 +1,188 @@
-# Getting Started with Create React App
+# Portfolio Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive portfolio website built with React and React Router to showcase projects, skills, and professional experience.
 
-## Available Scripts
+## 📋 Table of Contents
 
-In the project directory, you can run:
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Project Structure](#project-structure)
+- [Installation](#installation)
+- [Running the Project](#running-the-project)
+- [Available Scripts](#available-scripts)
+- [Pages & Routes](#pages--routes)
+- [Project Structure Details](#project-structure-details)
+- [Contributing](#contributing)
+
+## ✨ Features
+
+- **Responsive Design** - Works seamlessly on desktop, tablet, and mobile devices
+- **Client-Side Routing** - Smooth navigation between pages using React Router
+- **Projects Showcase** - Dedicated page to display your portfolio of work
+- **About Section** - Tell your story and highlight your background
+- **Contact Page** - Easy way for visitors to get in touch
+- **Experience Section** - Showcase your professional background
+- **Modern UI** - Clean and professional design
+
+## 🛠 Tech Stack
+
+- **React** - v19.2.4 (JavaScript library for building user interfaces)
+- **React Router DOM** - v7.13.0 (Client-side routing)
+- **React Scripts** - v5.0.1 (Build and test scripts)
+- **CSS3** - For styling and responsive layouts
+- **Node.js** - Runtime environment
+
+### Testing & Quality Assurance
+
+- **Jest** - Testing framework
+- **React Testing Library** - Component testing utilities
+- **ESLint** - Code quality and consistency
+
+## 📁 Project Structure
+
+```
+frontend/
+├── public/
+│   └── index.html              # Main HTML file
+├── src/
+│   ├── App.js                  # Main App component
+│   ├── App.css                 # App styling
+│   ├── index.js                # React entry point
+│   ├── index.css               # Global styles
+│   ├── reportWebVitals.js      # Performance monitoring
+│   ├── setupTests.js           # Test configuration
+│   │
+│   ├── Common/
+│   │   └── Header.js           # Navigation header component
+│   │
+│   ├── Components/             # Reusable UI components (expandable)
+│   │
+│   └── Pages/                  # Page components for routing
+│       ├── Home.js             # Home page
+│       ├── About.js            # About/Biography page
+│       ├── Projects.js         # Projects showcase page
+│       └── Contact.js          # Contact form page
+│
+├── package.json                # Project dependencies
+├── README.md                   # This file
+└── .gitignore                  # Git ignore file
+```
+
+## 📦 Installation
+
+### Prerequisites
+
+- Node.js (v14 or higher)
+- npm (v6 or higher)
+
+### Steps
+
+1. **Clone the repository**
+   ```bash
+   git clone <repository-url>
+   cd Portfolio_website/frontend
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+## 🚀 Running the Project
+
+### Development Mode
+
+Start the development server with hot reloading:
+
+```bash
+npm start
+```
+
+The application will open at `http://localhost:3000` in your browser.
+
+### Production Build
+
+Create an optimized production build:
+
+```bash
+npm run build
+```
+
+This creates a `build` folder with optimized files ready for deployment.
+
+## 📜 Available Scripts
 
 ### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Runs the app in development mode
+- Open [http://localhost:3000](http://localhost:3000) to view in browser
+- Page reloads when you make changes
+- Shows lint errors in the console
 
 ### `npm run build`
+- Builds the app for production to the `build` folder
+- Correctly bundles React in production mode
+- Optimizes the build for the best performance
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### `npm test`
+- Launches the test runner in interactive watch mode
+- Tests are written using Jest and React Testing Library
 
 ### `npm run eject`
+- **Note: this is a one-way operation. Once you eject, you can't go back!**
+- Exposes all configuration files and dependencies
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🗺 Pages & Routes
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The portfolio includes the following pages:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+| Page | Route | Description |
+|------|-------|-------------|
+| **Home** | `/` | Landing page with introduction |
+| **About** | `/about` | Personal background and skills |
+| **Projects** | `/projects` | Showcase of your work and portfolio projects |
+| **Experience** | `/experience` | Professional experience and timeline |
+| **Contact** | `/contact` | Contact form for visitors to reach out |
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+*Routes are configured through React Router DOM in the App.js component*
 
-## Learn More
+## 🏗 Project Structure Details
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Common/
+- **Header.js** - Navigation component with links to all main pages
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Pages/
+- **Home.js** - Main landing page
+- **About.js** - Profile and background information
+- **Projects.js** - Portfolio and project showcase
+- **Contact.js** - Contact form and information
 
-### Code Splitting
+### Components/
+- Currently empty, but ready for reusable UI components
+- Add shared components here (buttons, cards, modals, etc.)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🤝 Contributing
 
-### Analyzing the Bundle Size
+Contributions are welcome! To contribute:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. Create a new branch for your feature
+2. Make your changes
+3. Test thoroughly
+4. Submit a pull request with a clear description
 
-### Making a Progressive Web App
+## 📝 Notes
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- All CSS styling is managed in `App.css` and individual component CSS files
+- For better performance, consider code-splitting pages using React.lazy() and Suspense
+- Add environment variables in a `.env` file for any API endpoints
 
-### Advanced Configuration
+## 📄 License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+This project is open source and available under the appropriate license.
 
-### Deployment
+## 📧 Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+For inquiries or questions about this portfolio, please visit the Contact page within the application.
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Last Updated**: February 2026
