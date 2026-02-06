@@ -1,0 +1,25 @@
+.layout {
+  min-height: 100vh;
+  position: relative;
+  padding-top: var(--nav-height);
+}
+
+.background-glow {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50vw;
+  height: 50vw;
+  background: radial-gradient(circle, rgba(100, 255, 218, 0.1) 0%, rgba(0, 0, 0, 0) 70%);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  width: 100%;
+}

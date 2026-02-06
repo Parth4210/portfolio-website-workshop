@@ -1,11 +1,13 @@
+import { NavLink } from 'react-router-dom';
+
 const Header = () => {
     return (
         <div className="navbar">
-            <button className="btn">Home</button>
-            <button className="btn">About Me</button>
-            <button className="btn">Projects</button>
-            <button className="btn">Experience</button>
-            <button className="btn">Contact</button>
+            <NavLink to="/" className="btn">Home</NavLink>
+            <NavLink to="/about" className="btn">About Me</NavLink>
+            <NavLink to="/projects" className="btn">Projects</NavLink>
+            <NavLink to="/experience" className="btn">Experience</NavLink>
+            <NavLink to="/contact" className="btn">Contact</NavLink>
         </div>
     )
 }

@@ -1,20 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
 
-body {
+:root {
+  --bg-color: #0a192f;
+  --surface-color: #112240;
+  --text-primary: #ccd6f6;
+  --text-secondary: #8892b0;
+  --accent-color: #64ffda;
+  --glass-bg: rgba(10, 25, 47, 0.7);
+  --glass-border: rgba(100, 255, 218, 0.1);
+  --font-main: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'SF Mono', 'Fira Code', monospace;
+  --nav-height: 100px;
+}
+
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: 'Montserrat';
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  font-family: var(--font-main);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(135deg, #0a0212 0%, #2a133d 100%);
-  height: 100vh;
-  width: 100%;
-  opacity: 0;
-  animation: fadeInAnimation ease 1.5s forwards;
-  display: flex;
-  justify-content: center ;
 }
 
 @keyframes fadeInAnimation {

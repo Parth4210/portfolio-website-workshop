@@ -6,27 +6,30 @@
     left: 50%;
     transform: translateX(-50%);
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     gap: 30px;
     padding: 10px;
     background: transparent;
     border: none;
     z-index: 1000;
     width: max-content;
+    text-decoration: none;
 }
 
 .btn {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     position: relative;
+    display: inline-block;
     background: transparent;
     color: #ffffff;
     border: none;
     padding: 8px 12px;
     cursor: pointer;
-    font-size: 15px;
+    font-size: 60px;
     text-transform: uppercase;
     letter-spacing: 2px;
+    text-decoration: none;
     transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
@@ -54,3 +57,12 @@
 .btn.active::after {
     transform: scaleX(1);
 }
+
+/* .container{
+    margin-top: 180px;
+    width: 75vw;
+    color: white;
+    height: auto;
+    display: flex;
+    justify-content: center;
+} */

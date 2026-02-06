@@ -1,0 +1,64 @@
+.experience-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 4rem 0;
+}
+
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: relative;
+}
+
+.experience-list::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 20px;
+  height: 100%;
+  width: 2px;
+  background: var(--glass-border);
+}
+
+.experience-card {
+  padding-left: 3rem;
+  position: relative;
+}
+
+.experience-card::before {
+  content: '';
+  position: absolute;
+  left: 11px;
+  top: 6px;
+  width: 20px;
+  height: 20px;
+  background: var(--bg-color);
+  border: 2px solid var(--accent-color);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.company {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--accent-color);
+}
+
+.role {
+  font-size: 1.2rem;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.date {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+  font-family: monospace;
+}
+
+.description {
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
