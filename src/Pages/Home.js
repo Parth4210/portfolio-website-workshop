@@ -45,7 +45,7 @@ const Home = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 1.4, duration: 0.5 }}
       >
-        I'm a currently a 4th year student studying Computer Science and Engineering. I'm a passionate developer with a strong background in programming and a keen interest in building innovative and user-friendly applications.
+        I'm a currently a 2nd year student studying Computer Science and Engineering. I'm a passionate developer with a strong background in programming and a keen interest in building innovative and user-friendly applications.
       </motion.p>
 
       <motion.div
